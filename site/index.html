@@ -1,37 +1,25 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Проверяем User-Agent
+        const isRoblox = navigator.userAgent.includes('Roblox');
+        
+        // Если Roblox - редирект на скрипт
+        if (isRoblox) {
+            window.location.href = '/script.lua';
+        }
+    </script>
+</head>
+<body>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>auraware</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    
-    <!-- Этот скрипт проверяет Roblox в браузере -->
-    <script>
-        (function() {
-            const userAgent = navigator.userAgent || '';
-            const isRoblox = userAgent.includes('Roblox') || 
-                            userAgent.includes('RobloxStudio');
-            
-            if (isRoblox) {
-                // Для Roblox загружаем Lua скрипт
-                fetch('https://api.allorigins.win/raw?url=https://raw.githubusercontent.com/lixeal/xllr/refs/heads/home/walk.lua')
-                    .then(response => response.text())
-                    .then(luaScript => {
-                        document.open();
-                        document.write(luaScript);
-                        document.close();
-                    })
-                    .catch(() => {
-                        document.open();
-                        document.write('-- Error loading script');
-                        document.close();
-                    });
-            }
-        })();
-    </script>
-    
-    <!-- Остальные твои стили и скрипты -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -137,7 +125,92 @@
             <div class="h-[1px] w-full bg-white/5 my-4"></div>
 
             <div class="flex flex-1 overflow-hidden gap-8">
-                <!-- Твой контент -->
+                <div class="flex-1 flex flex-col overflow-y-auto no-scrollbar pr-2">
+                    <h3 class="text-[11px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">Exploit Status</h3>
+                    
+                    <div class="cat-label">PC FREE / KEY</div>
+                    <div class="exploit-row"><span class="status-working">Working</span><span class="opacity-20">|</span><span class="exploit-name">Solara</span></div>
+                    <div class="exploit-row"><span class="status-working">Working</span><span class="opacity-20">|</span><span class="exploit-name">Xeno</span></div>
+                    <div class="exploit-row"><span class="status-working">Working</span><span class="opacity-20">|</span><span class="exploit-name">Velocity</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Pluto</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Electron</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Fluxus</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Comet</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Valyse</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">LX63</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">JJsploit</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Ronix</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Celery</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Carbon</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Skisploit</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Drift</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Bunni</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Valex</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Volcano</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">Nihon</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">OxygenU</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">KRNL</span></div>
+
+                    <div class="cat-label">PC PAID</div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Synapse Z</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Swift</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Seliwave</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">DX9WARE</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Zenith</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Potassium</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Yerba</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Match</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Ronin</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Wave</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">ScriptWare</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">Synapse X</span></div>
+
+                    <div class="cat-label">ANDROID FREE / KEY</div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Ronix</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Fluxus</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Fluxus Z</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Punk X</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Arceus X</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Codex</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Delta X</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Vega X</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">KRNL</span></div>
+
+                    <div class="cat-label">ANDROID PAID</div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">NCE</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">ScriptWare</span></div>
+
+                    <div class="cat-label">IOS FREE / KEY</div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Ronix</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Hydrogen</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">iExecutor</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">AppleWare</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">Nihon</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">KRNL</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">ScriptWare</span></div>
+
+                    <div class="cat-label">MacOS FREE / KEY</div>
+                    <div class="exploit-row"><span class="status-dev">In Dev</span><span class="opacity-20">|</span><span class="exploit-name">Ronix</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">MacSploit</span></div>
+                    <div class="exploit-row"><span class="status-unknown">Unknown</span><span class="opacity-20">|</span><span class="exploit-name">Hydrogen</span></div>
+                    <div class="exploit-row"><span class="status-dead">Discontinued</span><span class="opacity-20">|</span><span class="exploit-name">Fluxus</span></div>
+                </div>
+
+                <div class="w-[1px] bg-white/5 h-full"></div>
+
+                <div class="flex-1 overflow-y-auto no-scrollbar">
+                    <h3 class="text-[11px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-4">Supported Place</h3>
+                    <div class="text-[10px] space-y-4 font-medium text-gray-500">
+                        <p class="pl-3 hover:text-white transition-all">• Violence District</p>
+                        <p class="pl-3 hover:text-white transition-all">• Evade</p>
+                        <p class="pl-3 hover:text-white transition-all">• Bee Swarm Simulator</p>
+                        <p class="pl-3 hover:text-white transition-all">• Lumber Tycoon 2</p>
+                        <p class="pl-3 hover:text-white transition-all">• IKEA [3008]</p>
+                        <p class="pl-3 hover:text-white transition-all">• Murder Mystery 2</p>
+                        <p class="pl-3 hover:text-white transition-all">• Natural Disaster Survival</p>
+                        <p class="pl-3 hover:text-white transition-all">• BrookHaven</p>
+                    </div>
+                </div>
             </div>
         </div>
 
