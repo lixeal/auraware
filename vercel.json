@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/api/index.js"
+      "source": "/script.lua",
+      "destination": "/api/script.lua.js"
     },
     {
       "source": "/op",
