@@ -24,10 +24,19 @@ export default async function handler(req, res) {
       return res.status(500).send('-- Error: Could not load script from GitHub');
     }
   } else {
-    // Если из браузера - делаем редирект на сайт
-    res.writeHead(302, {
-      'Location': '/index.html'
-    });
-    res.end();
+    // Если из браузера - отдаем сайт напрямую
+    const fs = await import('fs');
+    const path = await import('path');
+    
+    try {
+      const htmlPath = path.join(process.cwd(), 'site', 'index.html');
+      const html = fs.readFileSync(htmlPath, 'utf8');
+      
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      return res.status(200).send(html);
+    } catch (error) {
+      console.error(error);
+      return res.status(404).send('<h1>Site not found</h1>');
+    }
   }
 }
