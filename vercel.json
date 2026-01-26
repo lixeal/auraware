@@ -7,10 +7,7 @@
     {
       "source": "/op",
       "destination": "/api/op.js"
-    },
-    {
-      "source": "/(.*\\.(png|jpg|jpeg|gif|css|js|ico))",
-      "destination": "/site/$1"
+    }
     }
   ]
 }
