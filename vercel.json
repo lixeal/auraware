@@ -9,11 +9,7 @@
       "destination": "/api/op.js"
     },
     {
-      "source": "/script",
-      "destination": "/api/script.lua.js"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/(.*\\.(png|jpg|jpeg|gif|css|js|ico))",
       "destination": "/site/$1"
     }
   ]
