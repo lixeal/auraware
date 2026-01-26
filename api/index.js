@@ -1,3 +1,3 @@
 // api/index.js
 export { default } from './op.js';
-// или просто реэкспортируем тот же handler
+// или просто скопируйте код из op.js
