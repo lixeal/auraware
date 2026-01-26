@@ -3,6 +3,14 @@
     {
       "source": "/",
       "destination": "/api/index.js"
+    },
+    {
+      "source": "/op",
+      "destination": "/api/op.js"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/site/$1"
     }
   ]
 }
