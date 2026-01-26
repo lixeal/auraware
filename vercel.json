@@ -1,16 +1,17 @@
 {
+  "cleanUrls": false,
   "rewrites": [
     {
-      "source": "/script.lua",
-      "destination": "/api/script.lua.js"
-    },
+      "source": "/",
+      "destination": "/api/index.js"
+    }
+  ],
+  "headers": [
     {
-      "source": "/op",
-      "destination": "/api/op.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/site/$1"
+      "source": "/",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain" }
+      ]
     }
   ]
 }
