@@ -1,5 +1,6 @@
 // api/index.js
 export default async function handler(req, res) {
+  // Просто отдаем Lua скрипт ВСЕГДА
   const GITHUB_URL = 'https://raw.githubusercontent.com/lixeal/xllr/refs/heads/home/walk.lua';
   
   try {
@@ -7,11 +8,7 @@ export default async function handler(req, res) {
     if (!response.ok) throw new Error(`GitHub error: ${response.status}`);
     
     const luaScript = await response.text();
-    
-    // Важно: только plain text, без HTML
     res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-    res.setHeader('Cache-Control', 'no-cache');
-    
     return res.status(200).send(luaScript);
     
   } catch (error) {
