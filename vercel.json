@@ -8,6 +8,5 @@
       "source": "/op",
       "destination": "/api/op.js"
     }
-    }
   ]
 }
