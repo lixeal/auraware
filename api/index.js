@@ -1,6 +1,5 @@
 // api/index.js
 export default async function handler(req, res) {
-  // Просто отдаем Lua скрипт ВСЕГДА
   const GITHUB_URL = 'https://raw.githubusercontent.com/lixeal/xllr/refs/heads/home/walk.lua';
   
   try {
@@ -13,6 +12,6 @@ export default async function handler(req, res) {
     
   } catch (error) {
     console.error(error);
-    return res.status(500).send('-- Error: Could not load script');
+    return res.status(500).send('-- Error: Could not load script from GitHub');
   }
 }
