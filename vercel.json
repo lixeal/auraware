@@ -2,15 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/api/op"
-    },
-    {
-      "source": "/op",
-      "destination": "/api/op"
-    },
-    {
-      "source": "/api",
-      "destination": "/api/op"
+      "destination": "/api/index.js"
     }
   ]
 }
