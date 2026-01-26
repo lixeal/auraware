@@ -9,7 +9,7 @@
       "destination": "/api/op.js"
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/(.*)",
       "destination": "/site/$1"
     }
   ]
