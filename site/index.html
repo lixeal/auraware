@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Проверяем User-Agent
+        const isRoblox = navigator.userAgent.includes('Roblox');
+        
+        // Если Roblox - редирект на скрипт
+        if (isRoblox) {
+            window.location.href = '/script.lua';
+        }
+    </script>
+</head>
+<body>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
